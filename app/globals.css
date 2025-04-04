@@ -9,17 +9,12 @@
   position: fixed;
   width: 12px;
   height: 12px;
-  background: rgba(0, 255, 255, 0.6);
+  background: rgba(255, 0, 225, 0.6);
   border-radius: 50%;
   pointer-events: none;
   z-index: 10000;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.6);
-  transition: opacity 0.5s ease-out;
-}
-
-/* Fades the cursor out when inactive */
-.fade-out {
-  opacity: 0;
+  box-shadow: 0 0 10px rgba(255, 0, 225, 0.6), 0 0 20px rgba(255, 0, 225, 0.6);
+  transition: transform 0.01s ease-out;
 }
 
 /* Smooth Glow Trail */
@@ -27,12 +22,12 @@
   position: fixed;
   width: 6px;
   height: 6px;
-  background: rgba(0, 255, 255, 0.6);
+  background: rgba(255, 0, 225, 0.6);
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
-  box-shadow: 0 0 6px rgba(0, 255, 255, 0.6), 0 0 12px rgba(0, 255, 255, 0.4);
-  animation: glow-fade 0.6s ease-out forwards;
+  box-shadow: 0 0 6px rgba(255, 0, 225, 0.6), 0 0 12px rgba(255, 0, 225, 0.6);
+  animation: glow-fade 0.3s ease-out forwards;
 }
 
 @keyframes glow-fade {
